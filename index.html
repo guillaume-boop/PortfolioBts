@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="eng" style="background:linear-gradient( blue, pink, blue, pink, blue, black, red, purple, blue, black);">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="image/GA2.png">
+
+    <!--------------------------------------------- Importer MATERIALIZE --------------------------------------------->  
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        /* Ajouter une bordure plus arrondie aux boutons avec la classe btn-rounded */
+        .btn {
+            border-radius: 20px; /* Vous pouvez ajuster cette valeur selon votre préférence */
+        }
+
+         .iris {
+          background-image: url("image/Capture.PNG");
+          background-repeat : no-repeat;
+          height: 900px;
+          background-size: cover;
+          border-radius: 0px 0px 10px 10px; 
+        }
+
+        .phiris {
+          background-image: url("image/Captureveille.PNG");
+          background-repeat : no-repeat;
+          height: 500px;
+          background-size: cover;
+          border-radius: 0px 0px 10px 10px; 
+        }
+
+html {
+  scroll-behavior: smooth;
+}   
+  
+
+
+.carte {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        perspective: 1000px;
+        transition: transform 0.8s;
+    }
+
+    .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.8s;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-front {
+        transform: rotateY(0deg);
+        border-radius: 10px 10px 10px 10px
+    }
+
+    .face-back {
+        transform: rotateY(180deg);
+        background-color: #f2f2f2;
+        color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: rotateY(180deg);
+        display: none;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .carte.retournee .face-front {
+        display: none;
+    }
+
+    .carte.retournee .face-back {
+        display: block;
+        transform: rotateY(0deg);
+    }
+
+    .carte2 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        perspective: 1000px;
+        transition: transform 0.8s;
+        border-radius: 10px 10px 10px 10px
+    }
+
+    .face2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.8s;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-front2 {
+        transform: rotateY(0deg);
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-back2 {
+        transform: rotateY(180deg);
+        background-color: #f2f2f2;
+        color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: rotateY(180deg);
+        display: none;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .carte2 .retournee2 .face-front2 {
+        display: none;
+    }
+
+    .carte2.retournee2 .face-back2 {
+        display: block;
+        transform: rotateY(0deg);
+    }
+
+    .carte3 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        perspective: 1000px;
+        transition: transform 0.8s;
+    }
+
+    .face3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.8s;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-front3 {
+        transform: rotateY(0deg);
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-back3 {
+        transform: rotateY(180deg);
+        background-color: #f2f2f2;
+        color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: rotateY(180deg);
+        display: none;
+        border-radius: 10px 10px 10px 10px
+    }
+
+    .carte3 .retournee3 .face-front3 {
+        display: none;
+    }
+
+    .carte3.retournee3 .face-back3 {
+        display: block;
+        transform: rotateY(0deg);
+    }
+  
+    .carte4 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        perspective: 1000px;
+        transition: transform 0.8s;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .face4 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform 0.8s;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .face-front4 {
+        transform: rotateY(0deg);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+      }
+
+    .face-back4 {
+        transform: rotateY(180deg);
+        background-color: #f2f2f2;
+        color: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: rotateY(180deg);
+        display: none;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    }
+
+    .carte4 .retournee4 .face-front4 {
+        display: none;
+    }
+
+    .carte4.retournee4 .face-back4 {
+        display: block;
+        transform: rotateY(0deg);
+    }
+
+
+
+.image-container img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  opacity: 0.5; /* Valeur d'opacité au survol */
+}
+
+.hidden{
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+}
+
+ </style>
+
+  </head>
+  
+  <!--------------------------------------------- Fin du HEADER --------------------------------------------->
+
+
+  <!--------------------------------------------- Page d'Accueil --------------------------------------------->
+  
+  <body>
+
+    <div class ="row" id="section6">  
+      <div class>
+<br><br>
+    
+          <!--------------------------------------------- Menu Bouton --------------------------------------------->
+          <div class="row">  
+            <div class="col s2 left"><a class="waves-effect waves-light btn indigo darken-4 z-depth-5"href="#section1">Qui je suis ? </a></p></div>
+            <div class="col s2 left"><a class="waves-effect waves-light btn indigo darken-4 z-depth-5" href="#section2">compétences </a></p></div>
+            <div class="col s2 left"><a class="waves-effect waves-light btn indigo darken-4 z-depth-5" href="#section3">Réalisations</a></p></div>
+            <div class="col s3 left"><a class="waves-effect waves-light btn indigo darken-4 z-depth-5" href="#section4">Veille Technologique </a></p></div>
+            <div class="col s1"></div>
+            <div class="col s2 right"><a class="waves-effect waves-light btn indigo darken-4 z-depth-5" href="#section5">Contact</a></p></div>
+          </div>
+          <div style="border-top: 2px grey solid;"></div>
+          <br><br><br><br>
+            
+    <!--------------------------------------------- LOGO --------------------------------------------->      
+        <div class="row">
+          <div class="col s3"></div>
+          <div class="col s6 center">
+            <img src="image/GA2.png" alt="" class="circle responsive-img z-depth-5 image-container" style="box-shadow: 6px 6px 0px rgba(0, 0, 0);">
+          </div>
+          <div class= "col s3"></div>
+        </div>
+          <br><br>
+    <!--------------------------------------------- TEXTE --------------------------------------------->
+      <div class="row" id="section1">
+          <div class="col s4"></div>
+          <div class="col s4 center"><h1 style="background-color: blue; border-radius: 10px;box-shadow: 6px 6px 0px rgba(0, 0, 0);" class="white-text text-cyan lighten-5 hidden">Portfolio</h1></div>
+          <div class= "col s4"></div>
+        </div>
+    
+
+      <div class="row">
+            <div class="col s2"></div>
+            <div class="col s8 center"><h5 style="background-color: blue; border-radius: 10px;box-shadow: 6px 6px 0px rgba(0, 0, 0);" class="white-text text-cyan lighten-5 hidden">Etudiant en 2ème année de BTS SIO au lycée Saint-Michel à Annecy.<br> A la recherche d'un stage de deuxième année.<h5>
+            <br></div>
+            <div class= "col s2"></div>
+          </div>
+      </div>
+    </div>
+
+
+    <!--------------------------------------------- COMPETENCES --------------------------------------------->
+
+    <div class="row" style="font-weight: bold; font-family: cursive; color:white" id="section2"><br>
+            <div class="col s2"></div>
+            <div class="col s8 center"><h2>Compétences<h2></div>
+            <div class= "col s2"></div>
+    </div>
+    
+    
+    <!--------------------------------------------- HTML --------------------------------------------->
+    
+        <div class="row">
+          <div class="col s6">
+                <div class="card-panel grey lighten-5 z-depth-1 hidden" style="border-radius: 10px 10px 10px 10px">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <img src="image/HTML5_logo_and_wordmark.svg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text"style="font-weight: bold;">HTML</span><br><br>
+                        <span class="black-text">Langage descriptif qui définit la structure d'une page web.</span><br><br><br>
+                        <span class="fa fa-star checked" style="color: orange;"></span>
+                        <span class="fa fa-star checked" style="color: orange;"></span>
+                        <span class="fa fa-star checked" style="color: orange;"></span>
+                        <span class="fa fa-star" style="color: orange;"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    <!--------------------------------------------- PYTHON --------------------------------------------->
+          <div class="col s6">
+            <div class="hidden">
+              <div class="card-panel grey lighten-5 z-depth-1" style="border-radius: 10px 10px 10px 10px">
+                <div class="row valign-wrapper">
+                  <div class="col s2">
+                    <img src="image/Python-logo-notext.svg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10">
+                  <span class="black-text"style="font-weight: bold;">PYTHON</span><br><br>
+                        <span class="black-text">Le langage Python est un langage de programmation orienté objet.</span><br><br><br>
+                        <span class="fa fa-star checked" style="color: orange;"></span>
+                        <span class="fa fa-star checked" style="color: orange;"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  <br>
+      </div>
+    <!--------------------------------------------- CSS --------------------------------------------->
+        <div class="row">
+          <div class="col s6">
+              <div class="card-panel grey lighten-5 z-depth-1 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="row valign-wrapper">
+                  <div class="col s2">
+                    <img src="image/css.jfif" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10">
+                  <span class="black-text"style="font-weight: bold;">CSS</span><br><br>
+                      <span class="black-text">Langage qui permet de créer des pages web à l'apparence soignée.</span><br><br><br>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+    <!--------------------------------------------- JAVASCRIPT --------------------------------------------->          
+          <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hidden" style="border-radius: 10px 10px 10px 10px">
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img src="image/js.jfif" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+                <span class="black-text"style="font-weight: bold;">JavaScript</span><br><br>
+                      <span class="black-text">Langage de programmation utilisé sur les pages web pour créer du contenu dynamique et interactif</span><br><br>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked"style="color: orange;"></span>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+
+    <!--------------------------------------------- PHP --------------------------------------------->      
+        <div class="row">
+          <div class="col s6">
+              <div class="card-panel grey lighten-5 z-depth-1 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="row valign-wrapper">
+                  <div class="col s2">
+                    <img src="image/php.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10">
+                  <span class="black-text"style="font-weight: bold;">PHP</span><br><br>  
+                      <span class="black-text">PHP est un langage de scripts libre principalement utilisé pour produire des pages Web dynamiques.</span><br><br>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!--------------------------------------------- MYSQL --------------------------------------------->
+          <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hidden" style="border-radius: 10px 10px 10px 10px">
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img src="image/mysql.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+                <span class="black-text"style="font-weight: bold;">MYSQL</span><br><br>
+                      <span class="black-text">Système de gestion de bases de données relationnelles (SGBDR).</span><br><br><br>
+                      <span class="fa fa-star checked" style="color: orange;"></span>
+                      <span class="fa fa-star checked"style="color: orange;"></span>
+                      <span class="fa fa-star checked"style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+
+    <!--------------------------------------------- REALISATIONS --------------------------------------------->
+    <!--------------------------------------------- TITRE --------------------------------------------->
+</div>
+    
+    <div class="row" style="font-weight: bold;" id="section3">
+            <div class="col s2"></div>
+            <div class="col s8 center" style=" color: white; font-family: cursive"><h2>Réalisations<h2></div>
+            <div class= "col s2"></div>
+    
+    <!--------------------------------------------- COMPOSANTS --------------------------------------------->
+      
+      <div class="col s3 center">
+        <div class="carte hidden" onclick="retournerCarte()">
+          <div class="face face-front image-container">
+            <img src="image/Capturegaudi" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px;"> 
+          </div>
+          <div class="face face-back">
+            <p>Site web statique sur antoni Gaudi en html, css et javascript</p>
+          </div>
+        </div><span class="card-title center" style="color:white"><h5>PROJET SCOLAIRE</h5></span> 
+      </div>
+
+      <div class="col s3 center">     
+        <div class="carte2 hidden" onclick="retournerCarte2()">
+          <div class="face2 face-front2 image-container">
+            <img src="image/Capturemusee" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px">
+          </div>
+          <div class="face2 face-back2">
+            <p class>Formulaire d'entrée et de sortie de visiteurs dans un musée. On s'est servit du html et css pour la mmise en page et de php et de mysql pour la gestion des données.</p>
+          </div>
+        </div><span class="card-title center" style="color:white"><h5>PROJET SCOLAIRE</h5></span>
+      </div>
+
+        <div class="col s3 center">
+          <div class="carte3 hidden" onclick="retournerCarte3()">
+            <div class="face3 face-front3 image-container">
+              <img src="image/Captureexpodispo" alt="Image" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px"/>
+            </div>
+            <div class="face3 face-back3">
+              <p>Systeme de gestion de commande simplifié à destination de personne en situation de handicap dans un esat. Html et CSS pour la mise en page et php et mySQL pour la gestion des données.</</p>
+            </div>
+          </div><span class="card-title center" style="color:white"><h5>PROJET DE STAGE</h5></span>
+        </div>
+
+        <div class="col s3 center">
+          <div class="carte4 hidden" onclick="retournerCarte4()">
+            <div class="face4 face-front4 image-container">
+              <img src="image/Captureecomobile.jfif" alt="Image" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px"/>
+            </div>
+            <div class="face4 face-back4">
+              <p>Création de site web avec base de donnée pour la réservation de vélo.</p>
+            </div>
+          </div><span class="card-title center" style="color:white"><h5>PROJET SCOLAIRE</h5></span>
+        </div>
+    </div>
+  </div><br><br><br>
+    <!--------------------------------------------- VEILLE TECHNOLOGIQUE --------------------------------------------->
+    
+    
+        <div class ="row" id="section4">
+          <div class ="phiris">
+            <div class="row" style="font-weight: bold; font-family: cursive; color:white; ">
+              <div class="col s2"></div>
+                <div class="col s8 center"><h2>Veille Tecnologique<h2></div>
+                  <div class= "col s2"></div>
+            </div>
+            
+            <div class="col s6">
+              <div class="card white darken-1 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="card-content ">
+                  <span class="card-title">Définir vos objectifs :</span>
+                  <p>Avant de commencer, déterminez clairement ce que vous souhaitez accomplir avec votre veille technologique.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col s6">
+              <div class="card white darken-1 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="card-content">
+                  <span class="card-title">Identifiez vos sources d'information :</span>
+                  <p>Trouvez des sources fiables et variées d'informations technologiques. Cela peut inclure des sites Web spécialisés, des blogs, des forums, des réseaux sociaux, des revues scientifiques, des conférences, des webinaires, etc.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col s6">
+              <div class="card white darken-1 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="card-content">
+                  <span class="card-title">Analysez et filtrez :</span>
+                  <p>Ne vous contentez pas de collecter des informations, analysez-les. Essayez de comprendre les tendances émergentes, les modèles et les implications pour votre domaine. Filtrez les informations pour ne conserver que ce qui est vraiment pertinent pour vos objectifs.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col s6">
+              <div class="card white darken-1 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+                <div class="card-content">
+                  <span class="card-title">Réévaluez régulièrement votre stratégie : </span>
+                  <p>Les sources d'information et les technologies changent constamment. Réévaluez régulièrement votre stratégie de veille technologique pour vous assurer qu'elle reste pertinente et efficace.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      <!--------------------------------------------- PARCOURS --------------------------------------------->  
+      <!--------------------------------------------- TITRE --------------------------------------------->
+      <div style="font-weight: bold; color: white" id="section3">
+          <div class="row">
+            <div class="col s2"></div>
+            <div class="col s8 center" style="font-family: cursive"><h2>Parcours<h2></div>
+            <div class= "col s2"></div></div>
+             
+        
+    <div class="row">
+    <div class="col s2"></div>
+        <div class="col s8">
+          <div class="card-panel grey lighten-5 z-depth-5 hidden"style="border-radius: 10px 10px 10px 10px">
+             <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="image/saintmichel.jfif" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                  <div class="col s10">
+                    <span class="black-text"style="font-weight: bold;">Lycée Saint-Michel Annecy</span><br><br>
+                    <span class="black-text">BTS SIO option SLAM</span><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <div class="col s2">
+         <br>
+        </div></div>
+      
+    
+ 
+      <div class="row">
+      <div class="col s2"></div>
+        <div class="col s8">
+          <div class="card-panel grey lighten-5 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+             <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="image/expodispo.jfif" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                  <div class="col s10">
+                    <span class="black-text"style="font-weight: bold;">Expo-Dispo </span><br><br>
+                    <span class="black-text">Stage de 1ère année de BTS</span><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <div class="col s2">
+        </div></div>
+       
+      <div class="row">
+      <div class="col s2"></div>
+        <div class="col s8">
+          <div class="card-panel grey lighten-5 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+             <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="image/uniscite.jfif" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                  <div class="col s10">
+                    <span class="black-text"style="font-weight: bold;">Uniscité</span><br><br>
+                    <span class="black-text">Service Civique</span><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <div class="col s2">
+         <br>
+        </div>
+      </div></div> 
+
+ 
+  <!--------------------------------------------- formulaire de la page --------------------------------------------->  
+  <div class="row">
+            <div class="col s12 center" id="section5" style="color:white;"><h2>Me contacter</h2></div>
+        </div>
+          
+      <div class="row">
+        <div class="col s1"></div>
+      
+        <div class="col s5 center">
+          <div class="card-panel grey lighten-5 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                    <i class="medium material-icons left">markunread</i>
+              </div>
+              <div class="col s10"><h5>guillaume.alameda@gmail.com</h5></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col s5 center">                
+          <div class="card-panel grey lighten-5 z-depth-5 hidden" style="border-radius: 10px 10px 10px 10px">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <i class="medium material-icons left">local_phone</i>
+              </div>
+              <div class="col s10"><h5>0695278966</h5></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col s1 center"></div>
+      </div>
+      
+      <div class="row">
+            <div class="col s12 center"><a class="btn waves-effect waves-light red darken-1 pulse" href="#section6">Retourner en haut de la page<i class="material-icons left">arrow_upward</i><i class="material-icons right">arrow_upward</i></a>
+       </div>
+       </body>
+
+
+
+
+<script>  
+
+  function retournerCarte() {
+  const carte = document.querySelector('.carte');
+  carte.classList.toggle('retournee');
+  }
+
+  function retournerCarte2() {
+  const carte = document.querySelector('.carte2');
+  carte.classList.toggle('retournee2');
+  }
+
+  function retournerCarte3() {
+  const carte = document.querySelector('.carte3');
+  carte.classList.toggle('retournee3');
+  }
+
+  function retournerCarte4() {
+  const carte = document.querySelector('.carte4');
+  carte.classList.toggle('retournee4');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting){
+          entry.target.classList.add('show');
+      } else { 
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+  
+
+
+  <br><br><br>
+  <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">Numéro de telephone: 0695278966</p>
+                <p class="grey-text text-lighten-4">Adresse mail: guillaume.alameda@gmail.com</p>
+                <li class="grey-text text-lighten-4"><a href="https://www.linkedin.com/in/guillaume-alameda-92b533217/?originalSubdomain=fr">Linkedin</a>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#section1">Qui je suis ?</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#section2">Compétences</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#section3">Réalisations</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#section4">Veille Technologique</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#section5">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+</html>
