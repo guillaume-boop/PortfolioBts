@@ -687,7 +687,8 @@ html {
   });
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach((el) => observer.observe(el));
-  
+
+   var instance = M.Datepicker.getInstance(elem);
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
