@@ -242,6 +242,26 @@ html {
     padding: 0;
 }
 
+  .parallax1 {
+    background-image: url('image/Captureveille.PNG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Utilisation de la hauteur de l'écran pour une approche plus simple */
+
+    /* Styles additionnels pour rendre le texte plus lisible sur le fond d'image */
+    color: white;
+    text-align: center;
+    padding: 50px; /* Ajoute un peu d'espacement pour le contenu */
+}
+
+/* Styles additionnels pour rendre le contenu lisible et agréable sur des écrans plus petits */
+@media screen and (max-width: 768px) {
+    .parallax1 {
+        height: 50vh; /* Réduit la hauteur pour les écrans plus petits */
+    }
+}
  </style>
 
   </head>
