@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="image/GA2.png">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      .hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+      .hidden2{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+      .logos{
+        display: flex;
+      }
+
+.logo:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4){
+  transition-delay: 600ms;
+}      
+
+      .img{
+        width:50px;
+      }
+      
+      
+    </style>
+
+
+<body>
+<div class="parallax1" style="background-image: url('image/page4.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+  <div class="row" id="section3" style="margin-bottom: 0;">
+            <div class="col s2"></div>
+            <div class="col s8 center"><h2 style="font-weight: bold; color:black;">Compétences</h2></div>
+            <div class= "col s2"></div>
+          </div>
+</div>
