@@ -783,6 +783,16 @@ html {
   carte.classList.toggle('retournee4');
   }
 
+    function retournerCarte5() {
+  const carte = document.querySelector('.carte5');
+  carte.classList.toggle('retournee5');
+  }
+
+    function retournerCarte6() {
+  const carte = document.querySelector('.carte6');
+  carte.classList.toggle('retournee6');
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry)
