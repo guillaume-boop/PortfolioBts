@@ -303,13 +303,12 @@ html {
   opacity: 0.5; /* Valeur d'opacité au survol */
 }
 
-.hidden {
+.hidden, .hidden.retournee {
   opacity: 0;
   transition: all 2s;
 }
 
-
-  .show {
+.show, .show.retournee {
   opacity: 1;
 }
 
@@ -860,7 +859,8 @@ html {
 
 function retournerCarte() {
     var carte = document.querySelector('.carte');
-    carte.classList.toggle('retournee'); // Ajoute ou supprime la classe 'retournee'
+    carte.classList.toggle('retournee');
+  }
 
 
   function retournerCarte2() {
