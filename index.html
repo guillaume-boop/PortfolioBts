@@ -583,7 +583,7 @@ html {
   
     
 <div class="col m6 center l4 center s12 center"><br><br>
-    <div class="col s12 hidden">
+    <div class="col s12">
         <div class="carte hidden" onclick="retournerCarte()" style="display: flex; justify-content: center; align-items: center;">
             <div class="face face-front image-container z-depth-5" style="display: flex; justify-content: center; align-items: center;">
                 <img src="image/Capturegaudi.PNG" style="height:300px; width:300px; border-radius: 10px;" alt="Image"> 
@@ -857,10 +857,19 @@ html {
 <script>
   
 
-  function retournerCarte() {
-  const carte = document.querySelector('.carte');
-  carte.classList.toggle('retournee');
-  }
+function retournerCarte() {
+    var carte = document.querySelector('.carte');
+    carte.classList.toggle('retournee'); // Ajoute ou supprime la classe 'retournee'
+
+    // Ajoute ou supprime les classes 'hidden' et 'show' en fonction de l'état de la carte
+    if (carte.classList.contains('retournee')) {
+        carte.classList.remove('hidden');
+        carte.classList.add('show');
+    } else {
+        carte.classList.remove('show');
+        carte.classList.add('hidden');
+    }
+}
 
   function retournerCarte2() {
   const carte = document.querySelector('.carte2');
