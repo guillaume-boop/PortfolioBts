@@ -861,15 +861,6 @@ function retournerCarte() {
     var carte = document.querySelector('.carte');
     carte.classList.toggle('retournee'); // Ajoute ou supprime la classe 'retournee'
 
-    // Ajoute ou supprime les classes 'hidden' et 'show' en fonction de l'état de la carte
-    if (carte.classList.contains('retournee')) {
-        carte.classList.remove('hidden');
-        carte.classList.add('show');
-    } else {
-        carte.classList.remove('show');
-        carte.classList.add('hidden');
-    }
-}
 
   function retournerCarte2() {
   const carte = document.querySelector('.carte2');
