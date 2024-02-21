@@ -855,7 +855,17 @@ html {
 
 
 <script>
-  
+window.addEventListener('scroll', function() {
+    var carte = document.querySelector('.carte');
+    var rect = carte.getBoundingClientRect(); // Récupère les dimensions de la carte par rapport à la fenêtre
+
+    // Si le haut ou le bas de la carte est en dehors de la fenêtre, retournez à la face avant
+    if (rect.top < 0 || rect.bottom > window.innerHeight) {
+        if (carte.classList.contains('retournee')) {
+            retournerCarte(); // Appel de votre fonction pour retourner la carte
+        }
+    }
+});  
 
 function retournerCarte() {
     var carte = document.querySelector('.carte');
