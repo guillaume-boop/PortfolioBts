@@ -14,6 +14,18 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
     <style> 
+
+
+/* Empêcher le zoom par geste de pincement */
+html, body {
+    touch-action: manipulation;
+    user-zoom: fixed;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+
+      
 .btn {
             border-radius: 20px;
         /* Vous pouvez ajuster cette valeur selon votre préférence */
