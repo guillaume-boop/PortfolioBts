@@ -388,7 +388,7 @@ html {
     
           <!--------------------------------------------- Menu Bouton --------------------------------------------->
 
-          <div class="row" id="section6" style="font-weight: bold; background: #F2F4F5; margin-bottom: 0; word-wrap: break-word;"><br>  
+          <div class="row" id="section6" style="font-weight: bold; background: #F2F4F5; margin-bottom: 0; word-wrap: break-word; z-index: 0"><br>  
             <div class="col l2 center m3 center s12 center"><a class="waves-effect waves-light btn z-depth-5" href="#section1" style="background-color: #FF6DC7; color: white; margin-bottom: 10px;">Qui je suis ?</a></div>
             <div class="col l3 center m3 center s12 center"><a class="waves-effect waves-light btn z-depth-5" href="#section2" style="background-color: #FF6DC7; color: white;  margin-bottom: 10px;">Compétences</a></div>
             <div class="col l2 center m3 center s12 center"><a class="waves-effect waves-light btn z-depth-5" href="#section3" style="background-color: #FF6DC7; color: white;  margin-bottom: 10px;">Réalisations</a></div>
@@ -399,13 +399,13 @@ html {
           
     
     <!--------------------------------------------- LOGO --------------------------------------------->      
-        <div class="row" style="border-top: 2px grey solid; background-image: url('image/page1.jpg'); background-repeat : no-repeat; height: 800px; background-size: cover; border-radius: 0px 0px 10px 10px; margin-bottom: 0;">
-       	  <div id="ambient" style="overflow:hidden; position:absolute; width:cover; height:250vh; z-index: -3; "></div>
+        <div class="row" style="z-index: -1; border-top: 2px grey solid; background-image: url('image/page1.jpg'); background-repeat : no-repeat; height: 800px; background-size: cover; border-radius: 0px 0px 10px 10px; margin-bottom: 0;">
+       	  <div id="ambient" style="overflow:hidden; position:absolute; width:cover; height:250vh; z-index: -1; "></div>
 	    <br><br><br><br>
           <div class="row">
           <div class="col m3 l3 s3"></div>
           <div class="col m6 center l6 center s6 center">
-            <img src="image/GA2.png" alt="" class="circle responsive-img z-depth-5 image-container" style=" border: 1px grey solid"><br><br><br>
+            <img src="image/GA2.png" alt="" class="circle responsive-img z-depth-5 image-container" style=" border: 1px grey solid; z-index: 1;"><br><br><br>
           </div>
           <div class= "col m3 l3 s3"></div>
 
@@ -414,7 +414,7 @@ html {
     <!--------------------------------------------- TEXTE --------------------------------------------->
 
           <div class="col l4 m1 s1"></div>
-          <div class="col m10 center l4 center s10 center"><h1 style="background-color: #FF6DC7; border-radius: 20px;" class="white-text text-cyan lighten-5 hidden z-depth-5">Portfolio</h1></div>
+          <div class="col m10 center l4 center s10 center"><h1 style="z-index: 1;background-color: #FF6DC7; border-radius: 20px;" class="white-text text-cyan lighten-5 hidden z-depth-5">Portfolio</h1></div>
           <div class= "col l4 m1 s1"></div>
         </div>
     
@@ -423,7 +423,7 @@ html {
         <div class="row" style="margin-bottom: 0;">
           <div class="col s3 center"></div>
           <div class="col m12 center l6 center">
-                <div class="card-panel hidden" style="border-radius: 10px 10px 10px 10px; background-color:white;">
+                <div class="card-panel hidden" style="border-radius: 10px 10px 10px 10px; background-color:white; z-index: 1">
                   <div class="row valign-wrapper">
                     <div class="col s3 m2 l2">
                       <img src="image/Capture moi.PNG" alt="" class="responsive-img" style=" border: 1px grey solid; border-radius: 0%;"> <!-- notice the "circle" class -->
