@@ -17,3 +17,354 @@
     z-index: 1; /* Place chaque bulle derrière les autres éléments */
 }
 
+        /* Ajouter une bordure plus arrondie aux boutons avec la classe btn-rounded */
+        .btn {
+            border-radius: 20px;
+        /* Vous pouvez ajuster cette valeur selon votre préférence */
+        }
+
+         
+html {
+  scroll-behavior: smooth;
+}   
+  
+
+
+
+  
+  
+  .carte {
+
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front {
+  transform: rotateY(0deg);
+}
+
+.face-back {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte.retournee {
+  transform: rotateY(180deg);
+}
+
+.carte.retournee .face-front {
+  opacity: 0;
+}
+
+.carte.retournee .face-back {
+  opacity: 1;
+}
+
+/* Copie avec le chiffre 2 */
+.carte2 {
+
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face2 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front2 {
+  transform: rotateY(0deg);
+}
+
+.face-back2 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte2.retournee2 {
+  transform: rotateY(180deg);
+}
+
+.carte2.retournee2 .face-front2 {
+  opacity: 0;
+}
+
+.carte2.retournee2 .face-back2 {
+  opacity: 1;
+}
+
+/* Copie avec le chiffre 3 */
+.carte3 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face3 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+
+  position: absolute;
+}
+
+.face-front3 {
+  transform: rotateY(0deg);
+}
+
+.face-back3 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte3.retournee3 {
+  transform: rotateY(180deg);
+}
+
+.carte3.retournee3 .face-front3 {
+  opacity: 0;
+}
+
+.carte3.retournee3 .face-back3 {
+  opacity: 1;
+}
+
+/* Copie avec le chiffre 4 */
+.carte4 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face4 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front4 {
+  transform: rotateY(0deg);
+}
+
+.face-back4 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte4.retournee4 {
+  transform: rotateY(180deg);
+}
+
+.carte4.retournee4 .face-front4 {
+  opacity: 0;
+}
+
+.carte4.retournee4 .face-back4 {
+  opacity: 1;
+}
+
+  /* Copie avec le chiffre 5 */
+
+  .carte5 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face5 {
+  width: 300px;  
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front5 {
+  transform: rotateY(0deg);
+}
+
+.face-back5 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte5.retournee5 {
+  transform: rotateY(180deg);
+}
+
+.carte5.retournee5 .face-front5 {
+  opacity: 0;
+}
+
+.carte5.retournee5 .face-back5 {
+  opacity: 1;
+}
+
+/* Copie avec le chiffre 6 */
+.carte6 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face6 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front6 {
+  transform: rotateY(0deg);
+}
+
+.face-back6 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte6.retournee6 {
+  transform: rotateY(180deg);
+}
+
+.carte6.retournee6 .face-front6 {
+  opacity: 0;
+}
+
+.carte6.retournee6 .face-back6 {
+  opacity: 1;
+}
+
+
+.image-container img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  opacity: 0.5; /* Valeur d'opacité au survol */
+}
+
+.hidden, .hidden.retournee {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show, .show.retournee {
+  opacity: 1;
+}
+
+.row, .col {
+    margin: 0;
+    padding: 0;
+}
+
+  .parallax1 {
+    background-image: url('image/Captureveille.PNG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Utilisation de la hauteur de l'écran pour une approche plus simple */
+    text-align: center;
+    padding: 50px;/* Styles additionnels pour rendre le texte plus lisible sur le fond d'image */
+
+}
+
+    .zoom {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .zoom:hover {
+    -webkit-transform: scale(1.1); /* Ajustez la valeur de l'échelle selon vos préférences */
+    transform: scale(1.1);
+  }
+  
+@media only screen and (max-width: 768px) {
+    .parallax1 {
+        height: 80vh; /* Ajuster la hauteur pour les écrans plus petits */
+    }
+}
+ 
+
+
+/* Styles additionnels pour rendre le contenu lisible et agréable sur des écrans plus petits */
+
+  body {
+        font-size: 18px;
+        overflow-X: hidden;
+  }
+
+@media only screen and (max-width: 600px) {
+  body {
+        font-size: 20px;
+  }
+}
