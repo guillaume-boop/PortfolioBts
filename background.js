@@ -11,7 +11,7 @@ particle_minwidth: 10,
 particle_radius: 50,
 particle_opacity: true,
 particle_colision_change: true,
-particle_background: 'rgba(250, 250, 250, 1)',
+particle_background: 'rgb(250, 250, 250)',
 particle_image: {
 image: false,
 src: ""
