@@ -604,8 +604,10 @@ function retournerCarte() {
 }
 
 var carte = document.querySelector('.carte');
+carte.addEventListener('click', retournerCarte);
 carte.addEventListener('mouseover', retournerCarte);
 carte.addEventListener('mouseout', retournerCarte);
+
 
 
   function retournerCarte2() {
