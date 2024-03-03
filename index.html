@@ -601,7 +601,11 @@
 function retournerCarte() {
     var carte = document.querySelector('.carte');
     carte.classList.toggle('retournee');
-  }
+}
+
+var carte = document.querySelector('.carte');
+carte.addEventListener('mouseover', retournerCarte);
+
 
 
   function retournerCarte2() {
