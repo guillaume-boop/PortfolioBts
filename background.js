@@ -11,7 +11,7 @@ particle_minwidth: 10,
 particle_radius: 50,
 particle_opacity: true,
 particle_colision_change: true,
-particle_background: rgba(32, 231, 61, 1),
+particle_background: #fafafa,
 particle_image: {
 image: false,
 src: ""
