@@ -598,23 +598,6 @@
 
 <script>
 
-function retournerCarte() {
-    var carte = document.querySelector('.carte');
-    carte.classList.toggle('retournee');
-}
-
-function remettreCarte() {
-    var carte = document.querySelector('.carte');
-    if (carte.classList.contains('retournee')) {
-        retournerCarte(); // Remettre la carte à sa position initiale
-    }
-}
-
-var carte = document.querySelector('.carte');
-carte.addEventListener('click', retournerCarte);
-
-var conteneur = document.getElementById('conteneur');
-conteneur.addEventListener('mouseleave', remettreCarte);
 
 
 
