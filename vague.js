@@ -2,9 +2,6 @@
 Vars
 --------------------*/
 document.addEventListener("DOMContentLoaded", function() {
-    // Déplacez la déclaration de randomNumber ici
-    let randomNumber = random();
-
     // Votre code JavaScript ici
     const deg = (a) => Math.PI / 180 * a;
     const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1));
@@ -129,9 +126,13 @@ document.addEventListener("DOMContentLoaded", function() {
     /*--------------------
     Setup
     --------------------*/
+    // Fonction setup() de p5.js
     function setup() {
         // Créez votre toile et effectuez d'autres initialisations nécessaires
         createCanvas(windowWidth, windowHeight);
+
+        // Initialisez le nombre aléatoire dans la fonction setup()
+        let randomNumber = random();
 
         // Initialisez également les autres paramètres d'opt dans la fonction setup()
         opt.particles = windowWidth / 500 ? 1000 : 500;
