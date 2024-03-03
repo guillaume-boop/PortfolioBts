@@ -20,13 +20,13 @@ responsive: [
  {
    breakpoint: 768,
    settings: {
-     particle_number: "15"
+     particle_number: "25"
    }
  },
  {
    breakpoint: 480,
    settings: {
-     particle_number: "10"
+     particle_number: "15"
    }
  }
 ]
