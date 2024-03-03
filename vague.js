@@ -3,8 +3,7 @@ Vars
 --------------------*/
 document.addEventListener("DOMContentLoaded", function() {
     // Votre code JavaScript ici
-    let randomNumber = random();
-});
+
 
 const deg = (a) => Math.PI / 180 * a
 const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1))
@@ -179,3 +178,6 @@ Resize
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight)
 }
+
+        let randomNumber = random();
+});
