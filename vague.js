@@ -129,12 +129,33 @@ class Particle {
 /*--------------------
 Setup
 --------------------*/
+let randomNumber;
+
+// Fonction setup() de p5.js
 function setup() {
-  createCanvas(windowWidth, windowHeight)
+  // Créez votre toile et effectuez d'autres initialisations nécessaires
+  createCanvas(windowWidth, windowHeight);
+
+  // Initialisez le nombre aléatoire dans la fonction setup()
+  randomNumber = random();
+
+  // Initialisez également les autres paramètres d'opt dans la fonction setup()
+  opt.particles = windowWidth / 500 ? 1000 : 500;
+  opt.h1 = rand(0, 360);
+  opt.h2 = rand(0, 360);
+  opt.s1 = rand(20, 90);
+  opt.s2 = rand(20, 90);
+  opt.l1 = rand(30, 80);
+  opt.l2 = rand(30, 80);
+  opt.angle = Math.PI / 180 * -90;
+  opt.strokeWeight = 1.2;
+  opt.tail = 82;
+
+  // Créez vos particules une fois que tout est initialisé
   for (let i = 0; i < opt.particles; i++) {
-    Particles.push(new Particle(Math.random() * width, Math.random() * height))
+    Particles.push(new Particle(random(width), random(height)));
   }
-  strokeWeight(opt.strokeWeight)
+  strokeWeight(opt.strokeWeight);
 }
 
 
