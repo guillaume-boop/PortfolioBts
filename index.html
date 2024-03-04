@@ -403,6 +403,34 @@
           </div>
         </div>
 
+	<div class="col m6 center l6 center s12 center"><br><br>
+          <div class="col s12">
+            <div class="carte7 hidden" onclick="retournerCarte7()" style="display: flex; justify-content: center; align-items: center;">
+              <div class="face7 face-front7 image-container z-depth-5">
+                <img src="image/CaptureMetmotriseminia.PNG" alt="Image" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px"/>
+              </div>
+              <div class="face7 face-back7 z-depth-5 hidden" style="font-weight: bold; display: flex; justify-content: center; align-items: center;">
+                <p>Création d'une application web ludique.</p>
+              </div>
+            </div>
+            <br><div class="text zoom" style="font-weight:bold;"><a style="color: #FF6DC7;" href="https://guillaume-boop.github.io/PortfolioBts/realisation.html#section7"><h5 style="font-weight:bold;">VOIR PLUS</h5></a></div>            
+          </div>
+        </div>
+
+	  <div class="col m6 center l6 center s12 center"><br><br>
+          <div class="col s12">
+            <div class="carte8 hidden" onclick="retournerCarte8()" style="display: flex; justify-content: center; align-items: center;">
+              <div class="face8 face-front8 image-container z-depth-5">
+                <img src="image/Capture-CatalogueEminia.PNG" alt="Image" style="height:300px; width:300px;border-radius: 10px 10px 10px 10px"/>
+              </div>
+              <div class="face8 face-back8 z-depth-5 hidden" style="font-weight: bold; display: flex; justify-content: center; align-items: center;">
+                <p>Création d'une page we dynamique.</p>
+              </div>
+            </div>
+            <br><div class="text zoom" style="font-weight:bold;"><a style="color: #FF6DC7;" href="https://guillaume-boop.github.io/PortfolioBts/realisation.html#section8"><h5 style="font-weight:bold;">VOIR PLUS</h5></a></div>            
+          </div>
+        </div>
+
     
   </div>
    
@@ -658,6 +686,16 @@
     function retournerCarte6() {
   const carte = document.querySelector('.carte6');
   carte.classList.toggle('retournee6');
+  }
+
+function retournerCarte7() {
+  const carte = document.querySelector('.carte7');
+  carte.classList.toggle('retournee7');
+  }
+
+function retournerCarte8() {
+  const carte = document.querySelector('.carte8');
+  carte.classList.toggle('retournee8');
   }
 
   const observer = new IntersectionObserver((entries) => {
