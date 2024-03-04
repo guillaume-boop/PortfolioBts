@@ -300,6 +300,93 @@ html {
   opacity: 1;
 }
 
+/* Copie avec le chiffre 7 */
+.carte7 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face7 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front7 {
+  transform: rotateY(0deg);
+}
+
+.face-back7 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte7.retournee7 {
+  transform: rotateY(180deg);
+}
+
+.carte7.retournee7 .face-front7 {
+  opacity: 0;
+}
+
+.carte7.retournee7 .face-back7 {
+  opacity: 1;
+}
+
+/* Copie avec le chiffre 8 */
+.carte8 {
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face8 {
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+  transition: transform 0.8s, opacity 0.8s;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.face-front8 {
+  transform: rotateY(0deg);
+}
+
+.face-back8 {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.carte8.retournee8 {
+  transform: rotateY(180deg);
+}
+
+.carte8.retournee8 .face-front8 {
+  opacity: 0;
+}
+
+.carte8.retournee8 .face-back8 {
+  opacity: 1;
+}
 
 .image-container img {
   opacity: 1;
