@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
             "default-state": {
                 gradients: [
                     ['#FFFF00, #FF6DC7'],
+                    ['#FFFF00, #FF6DC7'],
+                    ['#FFFF00, #FF6DC7']
 
-                ]
+                ], transitionSpeed: 10000 // Vitesse de transition en millisecondes
             }
         }
     });
