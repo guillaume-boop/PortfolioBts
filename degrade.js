@@ -6,9 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         states: {
             "default-state": {
                 gradients: [
-                    ['#ff9966', '#ff5e62'],
-                    ['#00F260', '#0575E6'],
-                    ['#e1eec3', '#f05053']
+                    ['#FFFF00, #FF6DC7'],
+
                 ]
             }
         }
