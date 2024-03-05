@@ -409,6 +409,7 @@ html {
 .row, .col {
     margin: 0;
     padding: 0;
+    z-index: 0;
 }
 
   .parallax1 {
@@ -435,9 +436,7 @@ html {
     transform: scale(1.1);
   }
 
-#competences-container {
-    position: relative;
-}
+
 
 #granim-canvas {
     position: absolute;
@@ -446,6 +445,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: -1; /* Pour positionner le canvas en arrière-plan */
+    
 }
 
 
