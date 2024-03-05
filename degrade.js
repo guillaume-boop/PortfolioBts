@@ -5,10 +5,10 @@ var granimInstance = new Granim({
     states : {
         "default-state": {
             gradients: [
-                ['#FFFF00', '#FF6DC7'],
-                ['#FFFF00', '#FF6DC7'],
-                ['#FFFF00', '#FF6DC7']
-            ],transitionSpeed: 2000
+                ['#833ab4', '#fd1d1d', '#fcb045'], // Premier dégradé de couleurs
+                ['#ff9a00', '#ff0000', '#ff00ea'], // Deuxième dégradé de couleurs
+            ],
+            transitionSpeed: 2000 // Vitesse de transition en millisecondes
         }
     }
 });
