@@ -5,8 +5,10 @@ var granimInstance = new Granim({
     states : {
         "default-state": {
             gradients: [
+                ['#FFFF00', '#FF6DC7'],
+                ['#FFFF00', '#FF6DC7'],
                 ['#FFFF00', '#FF6DC7']
-            ]
+            ],transitionSpeed: 2000
         }
     }
 });
