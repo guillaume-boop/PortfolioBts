@@ -1,5 +1,5 @@
 var granimInstance = new Granim({
-    element: '#canvas-basic', // Utiliser 'canvas-basic' comme ID de l'élément
+    element: '#canvas-basic',
     direction: 'left-right',
     isPausedWhenNotInView: true,
     states : {
@@ -12,4 +12,3 @@ var granimInstance = new Granim({
         }
     }
 });
-
