@@ -412,9 +412,7 @@ html {
   
 }
 
-.card-panel{
-      z-index: 0;
-}
+
   .parallax1 {
     background-image: url('image/Captureveille.PNG');
     background-attachment: fixed;
@@ -443,12 +441,9 @@ html {
 
 #granim-canvas {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Pour positionner le canvas en arrière-plan */
-    
+    z-index: -1;
 }
 
 
