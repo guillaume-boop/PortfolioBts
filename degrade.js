@@ -1,5 +1,5 @@
 var granimInstance = new Granim({
-    element: '#canvas-basic',
+    element: '#granim-canvas',
     direction: 'left-right',
     isPausedWhenNotInView: true,
     states : {
