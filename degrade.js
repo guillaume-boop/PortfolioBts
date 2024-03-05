@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var granimInstance = new Granim({
-        element: '#granim-canvas', // Utiliser l'élément canvas
-        direction: 'diagonal', // Direction de l'animation (diagonal, top-bottom, etc.)
+        element: '#granim-canvas',
+        direction: 'diagonal',
         states: {
             "default-state": {
                 gradients: [
@@ -9,8 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     ['#00F260', '#0575E6'],
                     ['#e1eec3', '#f05053']
                 ],
-                transitionSpeed: 10000 // Vitesse de transition en millisecondes
+                transitionSpeed: 10000
             }
         }
     });
 });
+
