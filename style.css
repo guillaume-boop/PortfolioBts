@@ -434,6 +434,14 @@ html {
     -webkit-transform: scale(1.1); /* Ajustez la valeur de l'échelle selon vos préférences */
     transform: scale(1.1);
   }
+
+  #granim-canvas {
+    width: 100%;
+    height: 100%;
+    /* Autres styles selon vos besoins */
+}
+
+  
   
 @media only screen and (max-width: 768px) {
     .parallax1 {
