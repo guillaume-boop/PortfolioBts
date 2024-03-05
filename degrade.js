@@ -6,7 +6,7 @@ var granimInstance = new Granim({
         "default-state": {
             gradients: [
                 ['#FFC0CB', '#FF69B4'], // Rose
-                ['#FFFFE0', '#FFFF00']  // Jaune
+                ['#98FB98', '#008000']
             ],
             transitionSpeed: 2000 // Vitesse de transition en millisecondes
         }
