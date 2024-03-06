@@ -1,7 +1,7 @@
 var granimInstance = new Granim({
     element: '#granim-canvas',
     
-    isPausedWhenNotInView: true,
+  
     states : {
         "default-state": {
             gradients: [
