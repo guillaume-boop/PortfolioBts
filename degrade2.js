@@ -6,21 +6,20 @@ var granimInstance = new Granim({
         "default-state": [
             {
                 gradients: [
-                    ['#4B0082', '#9400D3', '#6A5ACD'], // Dégradé de violet foncé à violet à bleu-moyen
+                    ['#4B0082', '#9400D3'], // Dégradé de violet foncé à violet
                 ]
             },
             {
                 gradients: [
-                    ['#1A1A2E', '#004953', '#9D9EAB'], // Dégradé de bleu foncé à bleu canard foncé à gris foncé
+                    ['#252628', '#003B46'], // Dégradé de gris foncé à bleu canard foncé
                 ]
             },
             {
                 gradients: [
-                    ['#252628', '#003B46', '#9C9D9E']  // Dégradé de bleu foncé à bleu canard foncé à gris foncé
+                    ['#003B46', '#005F6B'], // Dégradé de bleu canard foncé à une autre nuance
                 ]
             }
         ],
-        transitionSpeed: 1000 // Vitesse de transition en millisecondes
+        transitionSpeed: 2000 // Vitesse de transition en millisecondes
     }
 });
-
