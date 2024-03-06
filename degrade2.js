@@ -1,14 +1,15 @@
 var granimInstance = new Granim({
-    
-    
-  
+    element: '#canvas-basic',
+    direction: 'left-right',
+    isPausedWhenNotInView: true,
     states : {
         "default-state": {
             gradients: [
-                ['#833ab4', '#fd1d1d', '#fcb045']// Premier dégradé de couleurs
-
+                ['#FFC0CB', '#FF69B4'], // Rose
+                ['#FFFFE0', '#FFFF00']  // Jaune
             ],
-
+            transitionSpeed: 2000
         }
     }
 });
+
