@@ -23,3 +23,4 @@ var granimInstance = new Granim({
         transitionSpeed: 1000 // Vitesse de transition en millisecondes
     }
 });
+
