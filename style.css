@@ -111,15 +111,16 @@ body {
 
   height: 300px;
   perspective: 1000px;
- 
+  transition: transform 0.8s;
   transform-style: preserve-3d;
+  z-index:1;
 }
 
 .face {
   width: 300px;
   height: 300px;
   backface-visibility: hidden;
-  
+  transition: transform 0.8s, opacity 0.8s;
   border-radius: 10px;
   position: absolute;
 }
