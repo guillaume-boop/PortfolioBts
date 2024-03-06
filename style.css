@@ -123,10 +123,12 @@ body {
   transition: transform 0.8s, opacity 0.8s;
   border-radius: 10px;
   position: absolute;
+   z-index: 1;
 }
 
 .face-front {
   transform: rotateY(0deg);
+   z-index: 1;
 }
 
 .face-back {
@@ -138,10 +140,13 @@ body {
   opacity: 0;
   border-radius: 10px;
   position: absolute;
+
+   z-index: 1;
 }
 
 .carte.retournee {
   transform: rotateY(180deg);
+   z-index: 1;
 }
 
 .carte.retournee .face-front {
@@ -150,6 +155,7 @@ body {
 
 .carte.retournee .face-back {
   opacity: 1;
+   z-index: 1;
 }
 
 /* Copie avec le chiffre 2 */
@@ -466,19 +472,23 @@ body {
 .image-container img {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+   z-index: 1;
 }
 
 .image-container img:hover {
   opacity: 0.5; /* Valeur d'opacité au survol */
+   z-index: 1;
 }
 
 .hidden, .hidden.retournee {
   opacity: 0;
   transition: all 2s;
+   z-index: 1;
 }
 
 .show, .show.retournee {
   opacity: 1;
+   z-index: 1;
 }
 
 
