@@ -1,5 +1,5 @@
 var granimInstance = new Granim({
-    element: '#granim-canvas',
+    
     
   
     states : {
