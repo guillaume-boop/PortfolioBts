@@ -8,7 +8,7 @@ var granimInstance = new Granim({
                 ['#252628', '#003B46'],
                 ['#003B46', '#005F6B']
             ],
-            transitionSpeed: 1000 // Vitesse de transition en millisecondes
+            transitionSpeed: 2000 // Vitesse de transition en millisecondes
         }
     }
 });
