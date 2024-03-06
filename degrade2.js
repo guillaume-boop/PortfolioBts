@@ -1,6 +1,6 @@
 var granimInstance = new Granim({
     element: '#granim-canvas',
-    direction: 'left-right',
+    direction: 'diagonal',
     isPausedWhenNotInView: true,
     states : {
         "default-state": [
