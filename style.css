@@ -110,7 +110,7 @@ body {
   .carte {
 
   height: 300px;
-  perspective: 1000px;
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
