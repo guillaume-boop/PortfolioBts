@@ -1,35 +1,43 @@
-<!DOCTYPE html>
-<html lang="eng">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="image/GA2.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
-
+<!DOCTYPE html> 
+<html> 
   
-
+<head> 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   
-
+    <script type="text/javascript" 
+src="https://code.jquery.com/jquery-1.12.0.min.js"> 
+    </script> 
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
+    </script> 
       
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" ></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
-    
+
+
+
     <script> 
-        $(document).ready(function () { 
-            $('.carousel').carousel(); 
-        }); 
+        $(document).ready(function() {
+            // Initialiser le carrousel
+            $('.carousel').carousel();
+
+            // Définir un défilement automatique toutes les 5 secondes
+            setInterval(function() {
+                $('.carousel').carousel('next'); // Faire défiler vers la diapositive suivante
+            }, 4000); // 5000 millisecondes = 5 secondes
+        });
     </script> 
-    
-    
-    
-    <style>
+  
+    <style> 
+
       
       .hidden{
   opacity: 0;
@@ -102,7 +110,8 @@
 }
 
 .carousel { 
-            height: 800px; 
+            text-align: center;
+            height: cover; 
             perspective: 950px; 
             transform: translateY(-100px); 
         } 
@@ -111,6 +120,11 @@
             width: 7050px; 
         } 
 
+        .carousel-item span {
+  color: black;
+  font-weight: bold;
+  font-size: 20px; 
+}
 
       
 @media only screen and (max-width: 600px) {
@@ -119,641 +133,533 @@
   }
 }
       
+
       
     </style>
 
-
-<body>
-<div class="parallax1" style="background-image: url('image/page4.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-  <div class="row" style="margin-bottom: 0;">
-
-            <div class="col s12 center m12 center l12 center"><h2 style="font-weight: bold; color:black;">COMPETENCES</h2></div>
-
-          </div>
-</div>
-
-        
- <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-    <div class="row" style="margin-bottom: 0;">
-            
-            <div class="col s12 center m12 center l12 center"><h2 style="font-weight: bold; color:white;" id="section1">HTML</h2></div>
-   
-          </div></div>
-  
-  
-  <div class="row" style="background-color: white; margin-bottom: 0;">
-    <br><br><div class="logos">
-              <div class="row">
-                    <div class="col s12 center m4 center l4 center"><br>
-                      <img src="image/HTML5_logo_and_wordmark.svg.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                      <span class="black-text" style="font-weight: bold;">
-                        Le HTML (HyperText Markup Language) est un langage de balisage utilisé pour structurer et créer le contenu des pages Web. 
-                        <br>Il permet de diviser le contenu en différentes parties logiques tels que les titres, les paragraphes, les listes, les images et les liens hypertextes. 
-                        <br>Le HTML permet également d'intégrer des médias tels que des images, des vidéos et des fichiers audio, et de fournir des métadonnées pour aider les moteurs de recherche.
-                      </span>
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-                      <p class="black-text">
-                        - Structurer le contenu<br><br>
-                        - Créer des liens hypertextes<br><br>
-                        - Intégrer des médias<br><br>
-                        - Créer des pages Web statiques et dynamiques<br><br>
-                        - Créer des tableaux</p>
-                    </div>
-                  </div>
-          </div>
-
-            <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-              
-    
-
-        
-  <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
-    <div class="row" style="margin-bottom: 0;">
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section2">PYTHON</h2></div>
-          </div>
-  </div>
-    <!--------------------------------------------- PYTHON --------------------------------------------->
-
-
-<div class="row" style="background-color: white; margin-bottom: 0;">
-    <br><br>
-    <div class="logos">
-      <div class="row">
-        <div class="col s12 center m4 center l4 center"><br>
-            <img src="image/Python-logo-notext.svg.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-        </div>
-        <div class="col s12 center m4 center l4 center logo hidden"><br>
-            <span class="black-text" style="font-weight: bold;">
-                Python est un langage de programmation polyvalent, interprété, orienté objet et de haut niveau. 
-              <br>Il est réputé pour sa syntaxe simple et lisible, ce qui en fait un excellent choix pour les débutants en programmation tout en étant largement utilisé dans des applications professionnelles et scientifiques avancées.
-            </span>
-        </div>
-        <div class="col s12 center m4 center l4 center logo hidden"><br>
-            <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-            <p class="black-text">
-                - Créer des fonctions<br><br>
-                - Utiliser les différentes boucles<br><br>
-                - Crée des logiciels simples<br><br>
-                - Créer des tableaux 
-            </p>
-        </div>
-    </div>
-</div>
-  
-      <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-  
-  
-  
- <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-   <div class="row" style="margin-bottom: 0;">
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section3">CSS</h2></div>
-          </div></div>
-      
-    <!--------------------------------------------- CSS --------------------------------------------->
-
-    <div class="row" style="background-color: white; margin-bottom: 0;">
-            <br><br><div class="logos">
-              <div class="row">
-                    <div class="col s12 center m4 center l4 center"><br>
-                      <img src="image/css.jfif" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold;">
-
-Le CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour définir l'apparence et la mise en forme des documents HTML et XML. 
-<br>Il permet de contrôler la présentation visuelle des éléments d'une page web, tels que la couleur, la police, la taille, la disposition et d'autres aspects du design.
-                        </span></div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-                      <p class="black-text">
-                        - Styliser le texte<br><br>
-                        - Mettre en forme les éléments HTML<br><br>
-                        - Créer des animations<br><br>
-                        - Ajouter du responsive aux applications<br><br>
-                        - Utiliser des frameworks pour optimiser l'utilisation du CSS (Materialize)
-                        </p>
-                    </div>
-                  </div>
-          </div><br><br>
-
-      <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-
- <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-   <div class="row" style="margin-bottom: 0;">
-
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section4">JAVASCRIPT</h2></div>
-
-          </div></div>
-  
-    
-        
-    <!--------------------------------------------- JAVASCRIPT --------------------------------------------->          
-            <div class="row" style="background-color: white; margin-bottom: 0;">
-            <br><br><div class="logos">
-              <div class="row">
-                    <div class="col s12 center m4 center l4 center"><br>
-                      <img src="image/logo-javascript.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold;">
-
-                      JavaScript (JS) est un langage de programmation de script principalement utilisé pour rendre les pages web interactives et dynamiques.
-                        
-                        </span></div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-                      <p class="black-text">
-                        - Modifier la structure, le style et le contenu des éléments HTML d'une page web.<br>
-                       <br> - Créer des interfaces utilisateur interactives avec des fonctionnalités telles que les formulaires dynamiques, les boutons cliquables, les menus déroulants<br>
-                       <br> - Détecter les événements de l'utilisateur tels que les clics de souris, les pressions de touche et les mouvements de la souris<br>
-                        <br> - Manipulation du format json
-            
-                        </p>
-                    </div>
-                  </div>
-              </div>
-            
-          
-      
-        <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-            
-  
-  
-  
-   <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-     <div class="row" style="margin-bottom: 0;">
-
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section5">PHP</h2></div>
-
-          </div></div>
-        
-
-    <!--------------------------------------------- PHP --------------------------------------------->      
-
-            <div class="row" style="background-color: white; margin-bottom: 0;">
-            <br><br><div class="logos">
-              <div class="row">
-                    <div class="col s12 center m4 center l4 center"><br>
-                      <img src="image/php.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold;">
-
-Le PHP (Hypertext Preprocessor) est un langage de programmation côté serveur largement utilisé pour le développement web.<br>
-Il permet de créer des sites web dynamiques en générant du contenu personnalisé en temps réel, en traitant les données des utilisateurs soumises via des formulaires, en interagissant avec des bases de données pour stocker et récupérer des informations, en gérant les sessions utilisateur et l'authentification, en manipulant des fichiers sur le serveur, en envoyant des courriels, et en intégrant avec d'autres technologies web telles que HTML, CSS et JavaScript.
-                        </span></div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-                      <p class="black-text">
-                        - Gérer les données des formulaires<br><br>
-                        - Crée des sites web dynamiques<br><br>
-                        - Intéragir avec les bases de données<br><br>
-                        - Utiliser les sessions et les cookies<br><br>
-                        - Créer des tableaux dynamiques<br><br>
-            
-                        </p>
-                    </div>
-                  </div>
-          </div><br><br><br><br> 
-
-              
-
-      <div class="row" style="margin-bottom:0;">
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-
-
-
-    <!--------------------------------------------- MYSQL --------------------------------------------->
-            <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
-              <div class="row" style="margin-bottom: 0;">
-
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section6">SQL</h2></div>
-
-          </div></div>
-  
-  
-  
-            <div class="row" style="background-color: white; margin-bottom: 0;">
-            <br><br><div class="logos">
-              <div class="row">
-                    <div class="col s12 center m4 center l4 center"><br>
-                      <img src="image/Logo_sql.jfif" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold;">
-          <br>SQL (Structured Query Language) est un langage de programmation spécialement conçu pour interagir avec les bases de données relationnelles. 
-          <br>Il permet de manipuler et de gérer les données stockées dans une base de données, en effectuant des opérations telles que la création, la lecture, la mise à jour et la suppression de données.
-
-                      </span></div>
-                    <div class="col s12 center m4 center l4 center logo hidden"><br>
-                        <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-                      <p class="black-text">
-                        - Manipuler des données<br><br>
-                        - Créer et gérer des schémas<br><br>
-                        - Interroger des données<br><br>
-                        - Gérer les utilisateurs et leurs autorisations sur la base<br><br>
-                        - Créer et gérer des bases de données
-            
-                        </p>
-                    </div>
-                  </div><br><br>
-          </div>
-              
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div><br><br><br>
-          <div class= "col s3 m3 l3"></div>
-            </div>
-      <!--------------------------------------------- C++ --------------------------------------------->
-
-<div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
-    <div class="row" style="margin-bottom: 0;">
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section7">C++</h2></div>
-          </div></div>
-
-
-
-<div class="row" style="background-color: white; margin-bottom: 0;">
-    <br><br>
-    <div class="logos">
-      <div class="row">
-        <div class="col s12 center m4 center l4 center"><br>
-            <img src="image/c++logo-1.png" alt="" class="responsive-img logo hidden" style="width:100px; background-color: white;"> <!-- notice the "circle" class -->
-        </div>
-        <div class="col s12 center m4 center l4 center logo hidden"><br>
-                <span class="black-text" style="font-weight: bold;">
-                    C++ est un langage de programmation polyvalent et orienté objet, dérivé du langage C. 
-                    <br>C++ étend les fonctionnalités du langage C en y ajoutant des concepts de programmation orientée objet tels que l'encapsulation, l'héritage et le polymorphisme.
-                    <br>Cela permet aux programmeurs de structurer leur code de manière modulaire et de réutiliser efficacement du code existant. 
-                </span>
-        </div>
-        <div class="col s12 center m4 center l4 center logo hidden"><br>
-            <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
-            <p class="black-text">
-                - Créer des classes<br><br>
-                - Lier des classes<br><br>
-                - Créer des fonctions<br><br>
-                - Créer des tableaux 
-            </p>
-        </div>
-    </div>
-</div>
-  
-      <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-
-
-      <!--------------------------------------------- + --------------------------------------------->
-
-<div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
-    <div class="row" style="margin-bottom: 0;">
-            <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section7">Logiciels</h2></div>
-          </div>
-</div>
-
-
-
-<div class="row" style="background-color: white; margin-bottom: 0;">
-    <div class="logos" style="margin: 0 auto; display: block;">
-      <div class="row" style="margin: 0 auto;">
-        
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/React.png" title="React.js" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>React.js</span>
-</div>
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/wordpress.png" title="Wordpress" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Wordpress</span>
-</div>
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/wamp.png" title="Wamp-server" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Wamp-server</span>
-</div>
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/vp-online-logo.png" title="visual-paradigm-online" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>visual-paradigm-online</span>
-</div>
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/prestashop.png" title="Prestashop" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Prestashop</span>
-</div>
-
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/phpMyAdmin.png" title="phpMyAdmin" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>phpMyAdmin</span>
-</div>
-
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/materialize-logo.png" title="Materialize" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Materialize</span>
-</div>
-
-
-<div class="col s6 center m3 center l3 center"><br> 
-  <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/filezilla.png" title="Filezilla" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Filezilla</span>
-</div>
-
-
-</div>
-</div>
-</div>
-
-  
-      <div class="row" style="margin-bottom:0;"><br><br>
-          <div class="col s3 m3 l3"></div>
-          <div class="col s6 center m6 center l6 center">
-            <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
-              <i class="material-icons left">arrow_back</i>
-            </a><br>
-          </div>
-          <div class= "col s3 m3 l3"></div>
-            </div><br><br><br>
-            
-            </div>
-
-  <div class="carousel" style="position: relative;z-index: 1;">zeu
-    <a class="carousel-item" href="#one!"><img src="image/filezilla.png"></a>
-    <a class="carousel-item" href="#two!"><img src="image/filezilla.png"></a>
-    <a class="carousel-item" href="#three!"><img src="image/filezilla.png"></a>
-    <a class="carousel-item" href="#four!"> <div style="width: 100px; height: 100px; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
-      <img src="image/filezilla.png" title="Filezilla" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
-    </div>
-  </div>
-  <br>
-  <span>Filezilla</span></a>
-    
-    <a class="carousel-item" href="#five!"><img src="image/filezilla.png">filezilla</a>
-  </div>
-
-  
-</body>
-
-     <script> 
-        $(document).ready(function () { 
-            $('.carousel').carousel(); 
-        }); 
-    </script> 
-  
-    <style> 
-        body { 
-            margin: 0; 
-            padding: 0; 
-            background-color: coral; 
-        } 
-  
-        a { 
-            height: 900px; 
-            width: 650px; 
-        } 
-  
-        .carousel { 
-            height: 800px; 
-            perspective: 950px; 
-            transform: translateY(-100px); 
-        } 
-  
-        .carousel carousel-item { 
-            width: 7050px; 
-        } 
-  
-        img { 
-            width: 100%; 
-            height: 200px; 
-        } 
-  
-        h4 { 
-            margin: 0; 
-            padding: 0; 
-            background: #fff; 
-            color: #000; 
-            box-sizing: border-box; 
-            padding: 10px 5px; 
-            font-weight: bold; 
-            font-size: 20px; 
-            text-align: center; 
-        } 
-    </style> 
 </head> 
   
 <body> 
-    <div class="carousel"> 
-        <div class="carousel-item"> 
-            <a href= 
-"https://www.geeksforgeeks.org/how-to-create-responsive-image-gallery-using-html-css-jquery-and-bootstrap/"> 
-                <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20200130114641/responsivegallary1.png"> 
-            </a> 
-            <h4>Responsive image gallery</h4> 
-        </div> 
+
+  <div class="parallax1" style="background-image: url('image/page4.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+    <div class="row" style="margin-bottom: 0;">
+  
+              <div class="col s12 center m12 center l12 center"><h2 style="font-weight: bold; color:black;">COMPETENCES</h2></div>
+  
+            </div>
+  </div>
+  
           
-        <div class="carousel-item"> 
-            <a href= 
-"https://www.geeksforgeeks.org/how-to-create-a-tab-image-gallery/"> 
-                <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20191205124138/5510.png"> 
-            </a> 
-            <h4>Tab image gallery</h4> 
-        </div> 
-  
-        <div class="carousel-item"> 
-            <a href= 
-"https://www.geeksforgeeks.org/html-course-building-header-of-the-website/"> 
-                <img src= 
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/Screenshot-25-1024x453.png"> 
-            </a> 
-            <h4>Building header of a website</h4> 
-        </div> 
-  
-        <div class="carousel-item"> 
-            <a href= 
-"https://www.geeksforgeeks.org/how-to-design-image-slider-using-jquery/"> 
-                <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20200214124104/imageslider1.png"> 
-            </a> 
-            <h4>image slider</h4> 
-        </div> 
-  
-        <div class="carousel-item"> 
-            <a href= 
-"https://www.geeksforgeeks.org/how-to-create-image-lightbox-gallery-using-html-css-and-javascript/"> 
-                <img src= 
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200320161020/Screenshot-from-2020-03-20-16-06-36.png"> 
-            </a> 
-            <h4>image lightbox gallery</h4> 
-        </div> 
-    </div> 
-</body>    
-</html>
-
-  <script>
-      const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry)
-      if (entry.isIntersecting){
-          entry.target.classList.add('show');
-      } else { 
-        entry.target.classList.remove('show');
-      }
-    });
-  });
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
-
-      const hiddenElements2 = document.querySelectorAll('.hidden2');
-  hiddenElements.forEach((el) => observer.observe(el));
-  
-
-
+   <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+      <div class="row" style="margin-bottom: 0;">
+              
+              <div class="col s12 center m12 center l12 center"><h2 style="font-weight: bold; color:white;" id="section1">HTML</h2></div>
+     
+            </div></div>
     
-  </script>
+    
+    <div class="row" style="background-color: white; margin-bottom: 0;">
+      <br><br><div class="logos">
+                <div class="row">
+                      <div class="col s12 center m4 center l4 center"><br>
+                        <img src="image/HTML5_logo_and_wordmark.svg.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                        <span class="black-text" style="font-weight: bold;">
+                          Le HTML (HyperText Markup Language) est un langage de balisage utilisé pour structurer et créer le contenu des pages Web. 
+                          <br>Il permet de diviser le contenu en différentes parties logiques tels que les titres, les paragraphes, les listes, les images et les liens hypertextes. 
+                          <br>Le HTML permet également d'intégrer des médias tels que des images, des vidéos et des fichiers audio, et de fournir des métadonnées pour aider les moteurs de recherche.
+                        </span>
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+                        <p class="black-text">
+                          - Structurer le contenu<br><br>
+                          - Créer des liens hypertextes<br><br>
+                          - Intégrer des médias<br><br>
+                          - Créer des pages Web statiques et dynamiques<br><br>
+                          - Créer des tableaux</p>
+                      </div>
+                    </div>
+            </div>
+  
+              <div class="row" style="margin-bottom:0;"><br><br>
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+                
+      
+  
+          
+    <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
+      <div class="row" style="margin-bottom: 0;">
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section2">PYTHON</h2></div>
+            </div>
+    </div>
+      <!--------------------------------------------- PYTHON --------------------------------------------->
+  
+  
+  <div class="row" style="background-color: white; margin-bottom: 0;">
+      <br><br>
+      <div class="logos">
+        <div class="row">
+          <div class="col s12 center m4 center l4 center"><br>
+              <img src="image/Python-logo-notext.svg.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+          </div>
+          <div class="col s12 center m4 center l4 center logo hidden"><br>
+              <span class="black-text" style="font-weight: bold;">
+                  Python est un langage de programmation polyvalent, interprété, orienté objet et de haut niveau. 
+                <br>Il est réputé pour sa syntaxe simple et lisible, ce qui en fait un excellent choix pour les débutants en programmation tout en étant largement utilisé dans des applications professionnelles et scientifiques avancées.
+              </span>
+          </div>
+          <div class="col s12 center m4 center l4 center logo hidden"><br>
+              <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+              <p class="black-text">
+                  - Créer des fonctions<br><br>
+                  - Utiliser les différentes boucles<br><br>
+                  - Crée des logiciels simples<br><br>
+                  - Créer des tableaux 
+              </p>
+          </div>
+      </div>
+  </div>
+    
+        <div class="row" style="margin-bottom:0;"><br><br>
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+    
+    
+    
+   <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+     <div class="row" style="margin-bottom: 0;">
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section3">CSS</h2></div>
+            </div></div>
+        
+      <!--------------------------------------------- CSS --------------------------------------------->
+  
+      <div class="row" style="background-color: white; margin-bottom: 0;">
+              <br><br><div class="logos">
+                <div class="row">
+                      <div class="col s12 center m4 center l4 center"><br>
+                        <img src="image/css.jfif" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold;">
+  
+  Le CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour définir l'apparence et la mise en forme des documents HTML et XML. 
+  <br>Il permet de contrôler la présentation visuelle des éléments d'une page web, tels que la couleur, la police, la taille, la disposition et d'autres aspects du design.
+                          </span></div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+                        <p class="black-text">
+                          - Styliser le texte<br><br>
+                          - Mettre en forme les éléments HTML<br><br>
+                          - Créer des animations<br><br>
+                          - Ajouter du responsive aux applications<br><br>
+                          - Utiliser des frameworks pour optimiser l'utilisation du CSS (Materialize)
+                          </p>
+                      </div>
+                    </div>
+            </div><br><br>
+  
+        <div class="row" style="margin-bottom:0;"><br><br>
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+  
+   <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+     <div class="row" style="margin-bottom: 0;">
+  
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section4">JAVASCRIPT</h2></div>
+  
+            </div></div>
+    
+      
+          
+      <!--------------------------------------------- JAVASCRIPT --------------------------------------------->          
+              <div class="row" style="background-color: white; margin-bottom: 0;">
+              <br><br><div class="logos">
+                <div class="row">
+                      <div class="col s12 center m4 center l4 center"><br>
+                        <img src="image/logo-javascript.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold;">
+  
+                        JavaScript (JS) est un langage de programmation de script principalement utilisé pour rendre les pages web interactives et dynamiques.
+                          
+                          </span></div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+                        <p class="black-text">
+                          - Modifier la structure, le style et le contenu des éléments HTML d'une page web.<br>
+                         <br> - Créer des interfaces utilisateur interactives avec des fonctionnalités telles que les formulaires dynamiques, les boutons cliquables, les menus déroulants<br>
+                         <br> - Détecter les événements de l'utilisateur tels que les clics de souris, les pressions de touche et les mouvements de la souris<br>
+                          <br> - Manipulation du format json
+              
+                          </p>
+                      </div>
+                    </div>
+                </div>
+              
+            
+        
+          <div class="row" style="margin-bottom:0;"><br><br>
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+              
+    
+    
+    
+     <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+       <div class="row" style="margin-bottom: 0;">
+  
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section5">PHP</h2></div>
+  
+            </div></div>
+          
+  
+      <!--------------------------------------------- PHP --------------------------------------------->      
+  
+              <div class="row" style="background-color: white; margin-bottom: 0;">
+              <br><br><div class="logos">
+                <div class="row">
+                      <div class="col s12 center m4 center l4 center"><br>
+                        <img src="image/php.png" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold;">
+  
+  Le PHP (Hypertext Preprocessor) est un langage de programmation côté serveur largement utilisé pour le développement web.<br>
+  Il permet de créer des sites web dynamiques en générant du contenu personnalisé en temps réel, en traitant les données des utilisateurs soumises via des formulaires, en interagissant avec des bases de données pour stocker et récupérer des informations, en gérant les sessions utilisateur et l'authentification, en manipulant des fichiers sur le serveur, en envoyant des courriels, et en intégrant avec d'autres technologies web telles que HTML, CSS et JavaScript.
+                          </span></div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+                        <p class="black-text">
+                          - Gérer les données des formulaires<br><br>
+                          - Crée des sites web dynamiques<br><br>
+                          - Intéragir avec les bases de données<br><br>
+                          - Utiliser les sessions et les cookies<br><br>
+                          - Créer des tableaux dynamiques<br><br>
+              
+                          </p>
+                      </div>
+                    </div>
+            </div><br><br><br><br> 
+  
+                
+  
+        <div class="row" style="margin-bottom:0;">
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+  
+  
+  
+      <!--------------------------------------------- MYSQL --------------------------------------------->
+              <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
+                <div class="row" style="margin-bottom: 0;">
+  
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section6">SQL</h2></div>
+  
+            </div></div>
+    
+    
+    
+              <div class="row" style="background-color: white; margin-bottom: 0;">
+              <br><br><div class="logos">
+                <div class="row">
+                      <div class="col s12 center m4 center l4 center"><br>
+                        <img src="image/Logo_sql.jfif" alt="" class="responsive-img logo hidden" style="width:100px"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold;">
+            <br>SQL (Structured Query Language) est un langage de programmation spécialement conçu pour interagir avec les bases de données relationnelles. 
+            <br>Il permet de manipuler et de gérer les données stockées dans une base de données, en effectuant des opérations telles que la création, la lecture, la mise à jour et la suppression de données.
+  
+                        </span></div>
+                      <div class="col s12 center m4 center l4 center logo hidden"><br>
+                          <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+                        <p class="black-text">
+                          - Manipuler des données<br><br>
+                          - Créer et gérer des schémas<br><br>
+                          - Interroger des données<br><br>
+                          - Gérer les utilisateurs et leurs autorisations sur la base<br><br>
+                          - Créer et gérer des bases de données
+              
+                          </p>
+                      </div>
+                    </div><br><br>
+            </div>
+                
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div><br><br><br>
+            <div class= "col s3 m3 l3"></div>
+              </div>
+        <!--------------------------------------------- C++ --------------------------------------------->
+  
+  <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
+      <div class="row" style="margin-bottom: 0;">
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section7">C++</h2></div>
+            </div></div>
+  
+  
+  
+  <div class="row" style="background-color: white; margin-bottom: 0;">
+      <br><br>
+      <div class="logos">
+        <div class="row">
+          <div class="col s12 center m4 center l4 center"><br>
+              <img src="image/c++logo-1.png" alt="" class="responsive-img logo hidden" style="width:100px; background-color: white;"> <!-- notice the "circle" class -->
+          </div>
+          <div class="col s12 center m4 center l4 center logo hidden"><br>
+                  <span class="black-text" style="font-weight: bold;">
+                      C++ est un langage de programmation polyvalent et orienté objet, dérivé du langage C. 
+                      <br>C++ étend les fonctionnalités du langage C en y ajoutant des concepts de programmation orientée objet tels que l'encapsulation, l'héritage et le polymorphisme.
+                      <br>Cela permet aux programmeurs de structurer leur code de manière modulaire et de réutiliser efficacement du code existant. 
+                  </span>
+          </div>
+          <div class="col s12 center m4 center l4 center logo hidden"><br>
+              <span class="black-text" style="font-weight: bold">Mes Compétences:</span><br><br>
+              <p class="black-text">
+                  - Créer des classes<br><br>
+                  - Lier des classes<br><br>
+                  - Créer des fonctions<br><br>
+                  - Créer des tableaux 
+              </p>
+          </div>
+      </div>
+  </div>
+    
+        <div class="row" style="margin-bottom:0;"><br><br>
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+              
+              </div>
+  
+  
+        <!--------------------------------------------- + --------------------------------------------->
+  
+  <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">        
+      <div class="row" style="margin-bottom: 0;">
+              <div class="col s12 center col m12 center col l12 center"><h2 style="font-weight: bold; color:white;" id="section7">Logiciels</h2></div>
+            </div>
+  </div>
+  
+  
+  
+  <div class="row" style="background-color: white; margin-bottom: 0;"><br><br><br>
+ 
+          
+          <div class="carousel" style="position: relative;z-index: 1;">
+    
+            <a class="carousel-item" >    
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/React.png" title="React.js" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+              </div>
+            </div><br>
+            <span>React.js</span>
+          </a>
+            
+            
+            <a class="carousel-item" >
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/wordpress.png" title="Wordpress" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+            <span>Wordpress</span>
+          </a>    
+            
+            
+            <a class="carousel-item" >    
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/wamp.png" title="Wamp-server" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+            <span>Wamp-server</span>
+          </a>
+            
+            
+            <a class="carousel-item" >    
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/vp-online-logo.png" title="visual-paradigm-online" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+              </div>
+            </div><br>
+            <span>visual-paradigm-online</span>
+          </a>
+        
+        
+        
+            <a class="carousel-item" >    
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/prestashop.png" title="Prestashop" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+            <span>Prestashop</span>
+          </a>
+            
+            
+            <a class="carousel-item" >
+                <div style="width: 200px; height: 200px; margin: 0 auto;">
+                  <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                    <img src="image/phpMyAdmin.png" title="phpMyAdmin" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+            <span>phpMyAdmin</span>
+          </a>
+        
+        
+            <a class="carousel-item" > 
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/filezilla.png" title="Filezilla" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+              <span>Filezilla</span>
+            </a>
+            
+        
+            <a class="carousel-item" href="#five!">
+              <div style="width: 200px; height: 200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;margin: 0 auto;">
+                  <img src="image/materialize-logo.png" title="Materialize" class="responsive-img logo hidden" style="max-width: 100%; max-height: 100%;">
+                </div>
+              </div><br>
+              <span>Materialize</span>
+            </a>  
+    </div>
+  </div>
+
+        <div class="row" style="margin:0;">
+            <div class="col s3 m3 l3"></div>
+            <div class="col s6 center m6 center l6 center">
+              <a class="waves-effect waves-light btn-large z-depth-5" style="border-radius: 10px 10px 10px 10px; background-color: #FF6DC7; color: white;" href="https://guillaume-boop.github.io/PortfolioBts/#section2">Retour
+                <i class="material-icons left">arrow_back</i>
+              </a><br>
+            </div>
+            <div class= "col s3 m3 l3"></div>
+              </div><br><br><br>
+
+
+
+
+
+
+
+
+
+</div>
 
 
 <footer class="page-footer" style="margin: 0; padding: 0; height: auto; position: relative; margin-bottom: 0; background:#303030;">
-    <div class="container">
-        <div class="row" style="font-size: 1vw; margin-bottom: 0;"><br>
+  <div class="container">
+      <div class="row" style="font-size: 1vw; margin-bottom: 0;"><br>
 
-            <div class="col s3 center">
-                <ul class="white-text">
-                    <li><a href="https://guillaume-boop.github.io/PortfolioBts" class="white-text text-lighten-3">Accueil</a></li>
-                    <li><a href="https://guillaume-boop.github.io/PortfolioBts/competence.html" class="white-text text-lighten-3">Compétences</a></li>
-                    <li><a href="https://guillaume-boop.github.io/PortfolioBts/realisation.html" class="white-text text-lighten-3">Réalisations</a></li>
-                </ul>
-            </div>
+          <div class="col s3 center">
+              <ul class="white-text">
+                  <li><a href="https://guillaume-boop.github.io/PortfolioBts" class="white-text text-lighten-3">Accueil</a></li>
+                  <li><a href="https://guillaume-boop.github.io/PortfolioBts/competence.html" class="white-text text-lighten-3">Compétences</a></li>
+                  <li><a href="https://guillaume-boop.github.io/PortfolioBts/realisation.html" class="white-text text-lighten-3">Réalisations</a></li>
+              </ul>
+          </div>
 
-            <div class="col s6 center" style="margin-bottom: 0">
-                <ul class="black-text">
-                    <li style="word-wrap: break-word;"><a href="#" class="white-text text-lighten-4">0695278966</a></li>
-                    <li style="word-wrap: break-word;"><a href="mailto:guillaume.alameda@gmail.com" class="white-text text-lighten-4">guillaume.alameda@gmail.com</a></li>
-                    <li style="word-wrap: break-word;"><a href="https://www.linkedin.com/in/guillaume-alameda-92b533217/?originalSubdomain=fr" target="_blank">Linkedin</a></li>
-                </ul>
-            </div>
+          <div class="col s6 center" style="margin-bottom: 0">
+              <ul class="black-text">
+                  <li style="word-wrap: break-word;"><a href="#" class="white-text text-lighten-4">0695278966</a></li>
+                  <li style="word-wrap: break-word;"><a href="mailto:guillaume.alameda@gmail.com" class="white-text text-lighten-4">guillaume.alameda@gmail.com</a></li>
+                  <li style="word-wrap: break-word;"><a href="https://www.linkedin.com/in/guillaume-alameda-92b533217/?originalSubdomain=fr" target="_blank">Linkedin</a></li>
+              </ul>
+          </div>
 
-            <div class="col s3 center">
-                <ul class="black-text">
-                    <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section1" class="white-text text-lighten-3">Qui je suis ?</a></li>
-                    <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section2" class="white-text text-lighten-3">Compétences</a></li>
-                    <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section3" class="white-text text-lighten-3">Réalisations</a></li>
-                    <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section4" class="white-text text-lighten-3">Veille Technologique</a></li>
-                    <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section5" class="white-text text-lighten-3">Contact</a></li>
-                </ul>
-            </div>
+          <div class="col s3 center">
+              <ul class="black-text">
+                  <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section1" class="white-text text-lighten-3">Qui je suis ?</a></li>
+                  <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section2" class="white-text text-lighten-3">Compétences</a></li>
+                  <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section3" class="white-text text-lighten-3">Réalisations</a></li>
+                  <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section4" class="white-text text-lighten-3">Veille Technologique</a></li>
+                  <li style="word-wrap: break-word;"><a href="https://guillaume-boop.github.io/PortfolioBts/#section5" class="white-text text-lighten-3">Contact</a></li>
+              </ul>
+          </div>
 
-        </div>
-    </div>
+      </div>
+  </div>
 </footer>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting){
+        entry.target.classList.add('show');
+    } else { 
+      entry.target.classList.remove('show');
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+    const hiddenElements2 = document.querySelectorAll('.hidden2');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+  
+</script>
+
+
+
+</body> 
+  
 </html>
-
-
