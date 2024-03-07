@@ -590,10 +590,17 @@ Il permet de créer des sites web dynamiques en générant du contenu personnali
       const hiddenElements2 = document.querySelectorAll('.hidden2');
   hiddenElements.forEach((el) => observer.observe(el));
   
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
+    var options = {
+        fullWidth: true, // Occuper toute la largeur
+        indicators: true, // Afficher les indicateurs de diapositives
+        duration: 500, // Durée de l'animation entre les diapositives en millisecondes
+        autoplay: true, // Activer l'autoplay
+        interval: 5000 // Durée de chaque diapositive en millisecondes lors de l'autoplay
+    };
     var instances = M.Carousel.init(elems, options);
-  });
+});
 
     
   </script>
