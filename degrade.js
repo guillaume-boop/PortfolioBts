@@ -22,7 +22,7 @@ let spaceBetween = 20; // Espace entre les carrés fixes et le quatrième carré
 function setup() {
 
   
-    let canvas = createCanvas(500, 100);
+    let canvas = createCanvas(500, 150);
     canvas.parent('canvas-container');
     
     // Calcul de la position initiale du quatrième carré mobile
@@ -179,7 +179,7 @@ class Square {
         this.y = y;
         this.speedX = isMoving ? 1 : 0;
         this.size = squareSize;
-        this.borderThickness = 3;
+        this.borderThickness = 5;
         this.color = color(255);
         this.borderColor = color(255);
         this.disappearing = false;
