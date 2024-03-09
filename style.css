@@ -32,10 +32,11 @@ scroll-behavior: smooth;
         canvas {
             border: none;
         }
-        #canvas-container {
+               #canvas-container {
             display: flex;
             justify-content: center;
-            al
+            align-items: center;
+        }
 
 .row, .col {
   margin: 0;
