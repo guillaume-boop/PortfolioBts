@@ -8,7 +8,7 @@
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
       <link rel="stylesheet" href="style.css">
@@ -18,6 +18,7 @@
       <script src="granim.js-2.0.0/dist/granim.min.js" defer></script>
 
 	<script type="module" src="background.js"defer></script>
+	  <script type="module" src="blockchain.js"defer></script>
 
 
  
@@ -488,29 +489,23 @@ color: #FF6DC7;
     <!--------------------------------------------- VEILLE TECHNOLOGIQUE --------------------------------------------->
       <div class="row" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">  
         <div class="row" id="section4" style="margin-bottom: 0;">
-            
-		
-	<div class="col s12 center m12 center l12 center">
-		    <h2 style="font-weight: bold; color: white ;" class="white-text;">Veille Technologique</h2>
-	    </div>
-       
-
-
-
-		    
-    <div class="col s12 center m12 center l12 center">
-            <div class="white-text">
-                Passionné par la technologie blockchain et les cryptomonnaies, j'effectue depuis l'année dernière une veille technologique sur ce sujet.
+            <div class="col s12 center m12 center l12 center">
+                <h2 style="font-weight: bold; color: white ;" class="white-text;">Veille Technologique</h2>
             </div>
-    </div>
-
-
-		
-      <div class="col s12 center"><br><br><br><a class="btn waves-effect waves-light z-depth-5 blanc" href="https://guillaume-boop.github.io/PortfolioBts/veille" style="font-weight: bold">En savoir plus
-        <i class="material-icons right" style="font-weight: bold">search</i><br><br></a><br><br>
-      </div>
-    
-	</div><br><br>
+            <div class="col s12 center m12 center l12 center">
+                <div class="white-text">
+                    Passionné par la technologie blockchain et les cryptomonnaies, j'effectue depuis l'année dernière une veille technologique sur ce sujet.
+                </div>
+            </div>
+            <div class="col s12 center">
+                <!-- Ajout du canevas pour les carrés animés -->
+                <div id="canvas-container"></div>
+            </div>
+            <div class="col s12 center">
+                <a class="btn waves-effect waves-light z-depth-5 blanc" href="https://guillaume-boop.github.io/PortfolioBts/veille" style="font-weight: bold;">En savoir plus
+                <i class="material-icons right" style="font-weight: bold;">search</i></a>
+            </div>
+        </div><br><br>
     </div>
 
     
