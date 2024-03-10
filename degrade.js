@@ -65,14 +65,14 @@ function drawRight() {
         }
     }
         console.log("Carré de droite terminé");
-        setTimeout(drawLeft, 2500); // Une fois que le carré mobile à droite a terminé son animation, commencez à dessiner vers la gauche
+        setTimeout(drawLeft, 3000); // Une fois que le carré mobile à droite a terminé son animation, commencez à dessiner vers la gauche
     }
 }
 
 function drawLeft() {
     let finishedLeft = false;
     let disparaitLeft = false;
-    setTimeout(2500);
+    setTimeout(3000);
     for (let square of squares) { // Boucle à travers tous les carrés
         square.moveleft(); // Appelle la méthode moveleft() de chaque carré pour les faire bouger vers la gauche
         square.display(); // Appelle la méthode display() de chaque carré pour les afficher
@@ -103,7 +103,7 @@ function drawLeft() {
         
         // Si le carré gauche a disparu, décaler les carrés restants vers la gauche après 3 secondes
         if (disparaitLeft) {
-            setTimeout(shiftSquaresToLeft, 2500);
+            setTimeout(shiftSquaresToLeft, 3000);
         }
     }
     
@@ -126,6 +126,9 @@ function shiftSquaresToLeft() {
     const stepSize = shiftAmount / steps; // Taille de chaque pas
     let count = 0; // Compteur pour suivre le nombre d'étapes effectuées
 
+    // Change la couleur de la bordure du carré de droite en vert
+    squares.find(square => square instanceof SquareRight).borderColor = color(60, 180, 40); // Mettre en vert
+
     // Déplace les carrés finaux vers la gauche progressivement
     for (let i = 0; i < steps; i++) {
         setTimeout(() => { // Utilisation de setTimeout pour effectuer chaque étape de déplacement progressivement
@@ -143,6 +146,9 @@ function shiftSquaresToLeft() {
         }, i * 50); // Délai entre chaque pas
     }
 }
+
+
+
 
 function reset() {
 
@@ -181,8 +187,8 @@ class Square {
         this.size = squareSize;
         this.borderThickness = 5;
         this.color = color(255);
-        this.borderColor = color(255);
         this.disappearing = false;
+        this.radius = 3;
     }
 
     moveright() {
@@ -201,7 +207,7 @@ class Square {
         noFill();
         strokeWeight(this.borderThickness);
         stroke(this.borderColor);
-        rect(this.x, this.y, this.size, this.size);
+        rect(this.x, this.y, this.size, this.size, this.radius); // Ajout du rayon pour les coins arrondis
     }
 
     disappear() {
@@ -216,7 +222,8 @@ class Square {
 class SquareLeft extends Square {
     constructor(x, y, isMoving = false) {
         super(x, y, isMoving);
-        this.speedX = isMoving ? -1 : 0;
+        this.speedX = isMoving ? -0.5 : 0;
+        this.borderColor = color(60, 180, 40); // Mettre en vert
     }
 }
 
@@ -224,15 +231,24 @@ class SquareRight extends Square {
     constructor(x, y, isMoving = false) {
         super(x, y, isMoving);
         this.speedX = isMoving ? -1 : 0;
+        this.borderColor = color(255,109,199); // Mettre en vert
     }
 }
 
 class SquareBasic extends Square {
     constructor(x, y, isMoving = false) {
         super(x, y, isMoving);
-        this.speedX = isMoving ? -1 : 0;
+        this.speedX = isMoving ? -0.5 : 0;
+        this.borderColor = color(60, 180, 40); // Mettre en vert
     }
 }
+
+
+
+
+
+
+
 
 
 function retournerCarte() {
