@@ -65,14 +65,14 @@ function drawRight() {
         }
     }
         console.log("Carré de droite terminé");
-        setTimeout(drawLeft, 3000); // Une fois que le carré mobile à droite a terminé son animation, commencez à dessiner vers la gauche
+        setTimeout(drawLeft, 2000); // Une fois que le carré mobile à droite a terminé son animation, commencez à dessiner vers la gauche
     }
 }
 
 function drawLeft() {
     let finishedLeft = false;
     let disparaitLeft = false;
-    setTimeout(3000);
+    setTimeout(2000);
     for (let square of squares) { // Boucle à travers tous les carrés
         square.moveleft(); // Appelle la méthode moveleft() de chaque carré pour les faire bouger vers la gauche
         square.display(); // Appelle la méthode display() de chaque carré pour les afficher
@@ -103,7 +103,7 @@ function drawLeft() {
         
         // Si le carré gauche a disparu, décaler les carrés restants vers la gauche après 3 secondes
         if (disparaitLeft) {
-            setTimeout(shiftSquaresToLeft, 3000);
+            setTimeout(shiftSquaresToLeft, 2000);
         }
     }
     
