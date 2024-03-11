@@ -1,7 +1,9 @@
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
+    var options = {}; // Définir les options ici
     var instances = M.FloatingActionButton.init(elems, options);
-  });
+});
+
 
 
 var granimInstance = new Granim({
