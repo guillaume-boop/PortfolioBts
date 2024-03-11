@@ -291,3 +291,26 @@ function retournerCarte() {
     const carte = document.querySelector('.carte8');
     carte.classList.toggle('retournee8');
     }
+
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+                entry.target.classList.remove('retournee'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee2'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee3'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee4'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee5'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee6'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee7'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee8'); // Réinitialiser l'état de la carte
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+    
