@@ -215,14 +215,14 @@ class Square {
         setTimeout(() => {
             // Rendre le carré invisible en réglant l'opacité de la couleur à zéro
             this.color.setAlpha(0);
-        }, 1000); // Délai avant la disparition
+        }); // Délai avant la disparition
     }
 }
 
 class SquareLeft extends Square {
     constructor(x, y, isMoving = false) {
         super(x, y, isMoving);
-        this.speedX = isMoving ? -0.5 : 0;
+        this.speedX = isMoving ? -1 : 0;
         this.borderColor = color(60, 180, 40); // Mettre en vert
     }
 }
@@ -238,7 +238,7 @@ class SquareRight extends Square {
 class SquareBasic extends Square {
     constructor(x, y, isMoving = false) {
         super(x, y, isMoving);
-        this.speedX = isMoving ? -0.5 : 0;
+        this.speedX = isMoving ? -1 : 0;
         this.borderColor = color(60, 180, 40); // Mettre en vert
     }
 }
