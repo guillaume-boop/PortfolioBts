@@ -38,6 +38,15 @@ src="https://code.jquery.com/jquery-1.12.0.min.js">
                 $('.carousel').carousel('next'); // Faire défiler vers la diapositive suivante
             }, 4000); // 5000 millisecondes = 5 secondes
         });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+  });
+
+</div>
+	    
     </script> 
   
     <style> 
@@ -180,7 +189,10 @@ scroll-behavior: smooth;
   
             </div>
   </div>
-  
+  <div class="fixed-action-btn">
+  <a class="btn-floating waves-effect waves-light btn-large z-depth-5 rose" href="#section1"><i class="material-icons">arrow_upward</i></a>
+  </a>
+</div>
           
    <div class="parallax1" style="background-image: url('image/page5.jpg'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 0;">         
       <div class="row" style="margin-bottom: 0;">
