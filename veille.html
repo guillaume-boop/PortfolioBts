@@ -87,7 +87,9 @@ html, body {
 }
 
 
-  
+html {
+scroll-behavior: smooth;
+} 
 @media only screen and (max-width: 600px) {
   body {
         font-size: 20px;
@@ -124,7 +126,7 @@ color: #FF6DC7;
 <div class="row" style="margin-bottom: 0; font-weight: bold; color: white;">
 <canvas id="granim-canvas"></canvas>
     <div class="col s12 center m12 center l12 center">
-        <h2 style="font-weight: bold;">Veille Technologique</h2>
+        <h2 style="font-weight: bold;" id="section1">Veille Technologique</h2>
     </div>
 
   <br><br><br>
@@ -410,6 +412,13 @@ color: #FF6DC7;
               </ul>
           </div>
 
+          <div class="col m12 center l12 center s12 center">
+            <a href="#section1">
+              <img src="image/GA2.png" class="circle responsive-img image-container" style="border: 1px grey solid; width: 70px;">
+          </a>
+          
+              <br>
+          </div>
 
 
       </div>
