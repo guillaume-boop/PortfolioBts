@@ -104,6 +104,8 @@ function drawRight() {
 }
 
 function drawLeft() {
+        // Change la couleur de la bordure du carré de droite en vert
+    squares.find(square => square instanceof SquareRight).borderColor = color(60, 180, 40); // Mettre en vert
     let finishedLeft = false;
     let disparaitLeft = false;
     setTimeout(100);
@@ -160,8 +162,7 @@ function shiftSquaresToLeft() {
     const stepSize = shiftAmount / steps; // Taille de chaque pas
     let count = 0; // Compteur pour suivre le nombre d'étapes effectuées
 
-    // Change la couleur de la bordure du carré de droite en vert
-    squares.find(square => square instanceof SquareRight).borderColor = color(60, 180, 40); // Mettre en vert
+
 
     // Déplace les carrés finaux vers la gauche progressivement
     for (let i = 0; i < steps; i++) {
