@@ -327,6 +327,10 @@ function retournerCarte() {
     carte.classList.toggle('retournee8');
     }
 
+    function retournerCarte9() {
+        const carte = document.querySelector('.carte9');
+        carte.classList.toggle('retournee9');
+        }
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -342,6 +346,7 @@ function retournerCarte() {
                 entry.target.classList.remove('retournee6'); // Réinitialiser l'état de la carte
                 entry.target.classList.remove('retournee7'); // Réinitialiser l'état de la carte
                 entry.target.classList.remove('retournee8'); // Réinitialiser l'état de la carte
+                entry.target.classList.remove('retournee9'); // Réinitialiser l'état de la carte
             }
         });
     });
